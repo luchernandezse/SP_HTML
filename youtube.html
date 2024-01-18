@@ -7,35 +7,67 @@
 
     <style>
         .mohr{
-            width: 800px;
+            width: 200px;
             object-fit: cover;
             object-position: center;
             border: 2px;
             border-style: solid;
             border-color: red;
-            border-radius: 400px;
+            
+            display:block;
         }
         .search-bar{
             font-size: 20px;
             margin-left: 12px;
+            display: block;
         }
         .video-title{
             width: 300px;
+        }
+        .video-author, .video-stats{
+            display: block;
+        }
+        .video-preview{
+            width:300px;
+            display:inline-block;
+            vertical-align: top;
+            margin-right: 50px;
+            margin-left: 20px;
+
         }
     </style>
 
 </head>
 <body>
-    <img class="mohr" src="img_youtube/MOHR1.png">
     <input class="search-bar" type="text" placeholder="Search">
+    
+    <div class="video-preview">
+        <img class="mohr" src="img_youtube/MOHR1.png">
+    
     <p class="video-title">
         Talking Tech and AI with Google CEO Sunday Pichai!
     </p>
-    <p>
+    <p class="video-author">
         Marques Brownlee
     </p>
-    <p>
+    <p class="video-stats">
         3.4M views &#183; 6 months ago
     </p>
+    </div>
+
+    <div class="video-preview">
+        <img class="mohr" src="img_youtube/building.jpg">
+    
+    <p class="video-title">
+        Building with steel: Fun parts of it in real world application.
+    </p>
+    <p class="video-author">
+        Markplier
+    </p>
+    <p class="video-stats">
+        90M views &#183; 4 years ago
+    </p>
+    </div>
+
 </body>
 </html>
